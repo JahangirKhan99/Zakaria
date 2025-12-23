@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Passport Challan</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f2f2f2;
+    }
+    form {
+      width: 320px;
+      background: white;
+      padding: 20px;
+      margin: 50px auto;
+      border-radius: 6px;
+    }
+    input, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 10px;
+    }
+    button {
+      background: green;
+      color: white;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Passport Challan</h2>
+
+<form action="/generate" method="post" target="_blank">
+  <input name="name" placeholder="Full Name" required>
+  <input name="cnic" placeholder="CNIC XXXXX-XXXXXXX-X" required>
+  <input name="bank" placeholder="Bank Name" required>
+  <input name="amount" placeholder="Amount" required>
+  <input name="date" type="date" required>
+
+  <button type="submit">Generate & Print</button>
+</form>
+
+</body>
+</html>
